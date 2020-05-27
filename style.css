@@ -95,3 +95,18 @@ body {
 @media (min-width: 700px) {
   .weather-container, .weather-container--js {
     padding-top: 50px; } }
+
+.others {
+  display: flex;
+  margin: 10px 0;
+  color: white; }
+
+.clouds {
+  margin: 0 10px; }
+  .clouds--js::before {
+    content: url(/img/cloud.png); }
+
+.wind {
+  margin: 0 10px; }
+  .wind--js::before {
+    content: url(/img/Group.png); }

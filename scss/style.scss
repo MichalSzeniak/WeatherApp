@@ -112,3 +112,27 @@ body {
         padding-top: 50px;
     }
 }
+
+.others {
+    display: flex;
+    margin: 10px 0;
+    color: white;
+}
+
+.clouds {
+    margin: 0 10px;
+    &--js{
+        &::before {
+            content: url(/img/cloud.png)
+        }
+    }
+}
+
+.wind {
+    margin: 0 10px;
+    &--js{
+        &::before {
+            content: url(/img/Group.png)
+        }
+    }
+}
