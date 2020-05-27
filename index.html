@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="normalize.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+    rel="stylesheet"/>
 </head>
 <body>
     <div class="weather-container">
         <header class="input">
             <input class="searchbox" type="text" autocomplete="off" placeholder="Search for a city.">
+            <input class="search-button" type="button" value="Search">
         </header>
         <main>
-            <section class="location">
-                <div class="city">Tarnogrod</div>
-                <div class="country">PL</div>
-            </section>
-            <section>
+            <section class="weather">
+                <div class="city"></div>
+                <div class="country"></div>
                 <div class="temp"></div>
-                
+                <div class="icon">
+                    <img class="icon__src" src="" alt="">
+                </div>
+                <p class="desctiption"></p>
+                <p class="min-max"></p>
             </section>
         </main>
     </div>

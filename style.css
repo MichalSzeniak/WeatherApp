@@ -1,2 +1,97 @@
-a {
-  color: blue; }
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  align-items: center; }
+
+.weather-container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #FFCD1B 0%, rgba(255, 0, 245, 0.65) 108.71%);
+  min-width: 320px;
+  min-height: 568px;
+  box-shadow: 0px 4px 51px rgba(255, 102, 0, 0.534);
+  transition: 0.3s ease-in; }
+
+.weather-container--js {
+  transition: 0.3s ease-in;
+  background: linear-gradient(180deg, #7c46ad 0%, rgba(0, 60, 255, 0.65) 108.71%); }
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.search-button {
+  width: 70%;
+  font-size: 1.5em;
+  max-width: 254px;
+  border: 1px rgba(158, 158, 158, 0.11) solid;
+  height: 40px;
+  background-color: rgba(243, 158, 101, 0.623);
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.1s ease-in-out; }
+  .search-button:active {
+    background-color: rgba(243, 158, 101, 0.925); }
+
+.searchbox {
+  margin: 43px 0 10px 0;
+  border: none;
+  background: linear-gradient(108.5deg, rgba(0, 178, 255, 0.15) 46.11%, rgba(0, 0, 0, 0.04) 147.45%);
+  border-radius: 30px 0px;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding-left: 15px;
+  outline: none;
+  width: 254px;
+  height: 64px;
+  transition: 0.3s border-bottom ease-in-out; }
+  .searchbox:focus {
+    border-bottom: 6px #ff7c01 solid; }
+
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.city {
+  margin-top: 10px;
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold; }
+
+.temp {
+  margin: 20px 0;
+  color: white;
+  font-size: 72px;
+  font-weight: 900; }
+
+.icon--js {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.22);
+  transition: 1s ease-in; }
+
+.desctiption {
+  margin-top: 20px;
+  color: white;
+  font-size: 24px; }
+
+.min-max {
+  color: white;
+  font-size: 16px; }
+
+@media (min-width: 700px) {
+  .weather-container, .weather-container--js {
+    padding-top: 50px; } }
