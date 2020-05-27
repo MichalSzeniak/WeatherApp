@@ -24,7 +24,7 @@ searchbox.addEventListener('keypress', (evt) => {
         searchValue = searchbox.value;
         console.log(searchValue);
         icon.classList.add("icon--js");
-        apiUrl ()
+        apiUrl()
     }
 });
 
@@ -32,16 +32,14 @@ const apiUrl = () => {
     const apiiurl = `${api.baseurl}${searchValue}&units=metric&APPID=${api.key}`;
     console.log(apiiurl);
 
-    fetch(apiiurl)
-        .then( (data) => data.json())
-        .then( (weather) => generate(weather))
+    fetch(apiiurl).then( (data) => data.json()).then( (weather) => generate(weather))
 }
 
 const generate = (data) => {
     city.innerHTML = `${data.name}`;
     country.innerHTML = `${data.sys.country}`
     temp.innerHTML = `${data.main.temp}°c`;
-    icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     desctiption.innerHTML = `${data.weather[0].description}`;
     minMax.innerHTML = `${(data.main.temp_min).toFixed()}°c / ${(data.main.temp_max).toFixed()}°c`
 
