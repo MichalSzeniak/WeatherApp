@@ -32,7 +32,9 @@ const apiUrl = () => {
     const apiiurl = `${api.baseurl}${searchValue}&units=metric&APPID=${api.key}`;
     console.log(apiiurl);
 
-    fetch(apiiurl).then( (data) => data.json()).then( (weather) => generate(weather))
+    fetch(apiiurl).then( (data) => data.json())
+    .then(generate);
+    // .then( (weather) => generate(weather))
 }
 
 const generate = (data) => {
