@@ -38,7 +38,7 @@ const generate = (data) => {
     console.log(data);
     city.innerHTML = `${data.name}`;
     country.innerHTML = `${data.sys.country}`
-    temp.innerHTML = `${data.main.temp}°c`;
+    temp.innerHTML = `${(data.main.temp).toFixed()}°c`;
     icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     desctiption.innerHTML = `${data.weather[0].description}`;
     minMax.innerHTML = `${(data.main.temp_min).toFixed()}°c / ${(data.main.temp_max).toFixed()}°c`;
@@ -53,9 +53,4 @@ const generate = (data) => {
     } else {
         weatherContainer.classList.remove("weather-container--js");
     }
-}
-
-
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js');
 }
