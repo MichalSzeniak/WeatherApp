@@ -123,7 +123,7 @@ body {
     margin: 0 10px;
     &--js{
         &::before {
-            content: url(/img/cloud.png)
+            content: url(/img/cloud.png);
         }
     }
 }
@@ -132,7 +132,7 @@ body {
     margin: 0 10px;
     &--js{
         &::before {
-            content: url(/img/Group.png)
+            content: url(/img/Group.png);
         }
     }
 }
