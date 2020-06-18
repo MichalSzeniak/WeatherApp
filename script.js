@@ -1,3 +1,6 @@
+import {registerSW} from 'pwa.js';
+registerSW();
+
 const api = { 
     key: '2faf5362af8831e653fa8cc1ca8dd326',
     baseurl: 'https://api.openweathermap.org/data/2.5/weather?q='
